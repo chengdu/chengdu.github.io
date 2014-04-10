@@ -24,7 +24,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+.footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -48,7 +48,7 @@ table {
 
 /* LAYOUT STYLES */
 body {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.5; 
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
@@ -64,11 +64,14 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #275da1;
+  background: transparent url(../images/header-bg.png) 0 0 repeat-x; /*#2e7bcf*/
+  padding-top: 40px;
+  padding-bottom: 50px;
+  /*border-bottom: solid 1px #b63e97; *//*#275da1;*/
+  /*background-position: 40px 70px;*/
+  width: 100%;
+  background-size: auto 210px;
 }
 
 header h1 {
@@ -81,12 +84,17 @@ header h1 {
 }
 
 header h2 {
-  font-size: 26px;
-  color: #9ddcff;
+  font-size: 47px;
+  /*color: #9ddcff;*/
   font-weight: normal;
-  line-height: 1.3;
+  line-height: 1.1;
   width: 540px;
   letter-spacing: 0;
+  /*margin logo*/
+  /*position: absolute;*/
+  right: 0;
+  top: 0;
+  margin-left: 260px;
 }
 
 .inner {
@@ -115,7 +123,7 @@ aside#sidebar {
   min-height: 504px;
   float: right;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.3;
 }
 
@@ -144,9 +152,14 @@ a.button small {
 }
 header a.button {
   position: absolute;
-  right: 0;
+  /*right: 0;*/
   top: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+  display: block;
+  width: 240px;
+  height: 160px;
+  /*background: transparent url(../images/github-button.png) 0 0 no-repeat;*/
+  background: transparent url(../images/logo240x160.png) 0 0 no-repeat;
+  margin-top: -36px;
 }
 aside a.button {
   width: 138px;
@@ -188,7 +201,6 @@ ul, ol, dl {
   margin-bottom: 20px;
 }
 
-
 /* COMMON STYLES */
 
 hr {
@@ -226,7 +238,7 @@ form {
 
 #main-content h1 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 2.8em;
+  font-size: 3.7em;
   letter-spacing: -1px;
   color: #474747;
 } 
@@ -254,11 +266,11 @@ form {
 
 #main-content h3 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 18px;
+  font-size: 22px;/*18px;*/
   font-weight: bold;
   margin-top: 24px;
   margin-bottom: 8px;
-  color: #474747;
+  color: #b63e97; /*#474747;*/
 } 
  
 #main-content h3:before {
@@ -287,6 +299,8 @@ h4:before {
   font-size: 14px;
   color: #474747;
 } 
+
+
 h5:before {
   content: "/////";
   color: #9ddcff;
@@ -340,19 +354,42 @@ dl dd {
   font-weight: 100;
 }
 
-footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+.footer {
+  /*background: transparent url('../images/article-footer.png') 0 0 repeat-x;*/
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
   font-size: 13px;
   color: #aaa;
+   margin-bottom: 40px;
+   text-align: center;
+   font-size: 17px;
+   width: 100%;
+   background-size: 300px 60px;
+   text-shadow: white 0px 0px 2px;
 }
 
-footer a {
+#footer{
+  float:left;
+  width:100%;
+  background:#FFF;
+  margin-top:50px;
+  padding-bottom:70px;
+  border-top:1px solid #d8d8d8;
+  vertical-align: middle;
+  font-size: 17px;
+}
+#footer p{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+.footer a {
   color: #666;
 }
-footer a:hover {
+
+.footer a:hover {
   color: #444;
 }
 
@@ -368,6 +405,61 @@ footer a:hover {
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
+/*---------------------------------------------------*/
+.navigation{
+    /*border-left: 1px dotted #999;*/
+    float: right;
+    width: 200px;
+    clear: both;
+    margin: 20px;
+}
+.navigation ul{
+    margin: 0 0 0 25px;
+    padding: 10px;
+    list-style: square;
+}
+.navigation ul li{
+    margin-bottom: 5px;
+}
+aside h3 {
+  font-size: 20px;
+  /*color: #9ddcff;*/
+  font-weight: normal;
+  line-height: 1.3;
+  width: 540px;
+  letter-spacing: 0;
+}
+aside a.appstore {
+  width: auto;
+  height: 72px;
+  /*padding-left: 64px*/;
+  margin-left: -40px;
+  display: block;
+  background: transparent url(../images/appstore.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+/*
+hr {
+  border-bottom: 1px solid #b63e97; 
+  margin-bottom:20px;
+}*/
+
+/*.footer{
+   background-image: none;
+   display: block;
+   margin-bottom: 15px;
+   text-align: center;
+   font-size: 17px;
+}*/
+
+.split {
+width: 100%;
+border-bottom: 1px solid #b63e97;
+height:1px;
+margin-bottom: 4px;
+}
 
 /* #Media Queries
 ================================================== */
@@ -388,6 +480,7 @@ footer a:hover {
   }
   header h2 {
     font-size: 30px;
+    margin-left: 0px;
   }
   #main-content {
     width: 490px;
@@ -423,6 +516,7 @@ footer a:hover {
   }
   header h2 {
     font-size: 24px;
+    margin-left: 0px;
   }
   header a.button {
     background-image: none;
