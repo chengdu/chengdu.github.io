@@ -137,7 +137,7 @@ aside#sidebar p.repo-owner a {
 }
 
 a.button {
-  width: 134px;
+  width: 1px;
   height: 58px;
   line-height: 1.2;
   font-size: 23px;
@@ -155,7 +155,7 @@ header a.button {
   /*right: 0;*/
   top: 0;
   display: block;
-  width: 20px;
+  width: 1px;
   height: 160px;
   /*background: transparent url(../images/logo240x160.png) 0 0 no-repeat;*/
   margin-top: -36px;
