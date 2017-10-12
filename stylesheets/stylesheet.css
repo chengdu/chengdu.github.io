@@ -157,8 +157,7 @@ header a.button {
   display: block;
   width: 240px;
   height: 160px;
-  /*background: transparent url(../images/github-button.png) 0 0 no-repeat;*/
-  background: transparent url(../images/logo240x160.png) 0 0 no-repeat;
+  /*background: transparent url(../images/logo240x160.png) 0 0 no-repeat;*/
   margin-top: -36px;
 }
 aside a.button {
